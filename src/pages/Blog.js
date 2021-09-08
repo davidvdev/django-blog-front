@@ -1,7 +1,9 @@
 import React from "react";
 
+import Post from "../components/post"
+
 const Blog = (props) => {
-    return <h1>Blog</h1>
+    return props.posts.map((post) => <Post post={post} key={post.id}/>)
 }
 
 export default Blog
