@@ -16,19 +16,21 @@ const Form = ({ initialPost, handleSubmit, buttonLabel, history}) => {
 
     return (
         <form onSubmit={handleSubmission}>
+            <label for="title" value="title" style={{textAlign: "left"}}>Title</label>
             <input 
                 type="text"
                 onChange={handleChange}
                 value={formData.title}
                 name="title"
             />
+            <label for="body" value="body" style={{textAlign: "left"}}>Body</label>
             <input 
                 type="text"
                 onChange={handleChange}
                 value={formData.body}
                 name="body"
             />
-            <input type="submit" value={buttonLabel} />
+            <input type="submit" value={buttonLabel}/>
         </form>
     )
 }

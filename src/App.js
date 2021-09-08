@@ -63,8 +63,14 @@ function App(props) {
   // use effects
   useEffect(() => {getPosts()}, [])
 
+  // style
+  const appStyle = {
+    margin: "1em",
+    textAlign: "center"
+  }
+
   return (
-    <div className="App">
+    <div className="App" style={appStyle}>
       <Link to="/">
         <h1>My Blog</h1>
       </Link>
